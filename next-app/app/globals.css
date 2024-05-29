@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .card {
+    background-color: theme('colors.black');
+    border-radius: theme('borderRadius.lg');
+    padding: theme('spacing.6');
+    /* box-shadow: theme('boxShadow.xl'); */
+  }
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  /* background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb)); */
+}
+
+.card-header {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 10px;
+
+}
+
+.nav-icon {
+  height: 28px;
+  width: 28px;
+}
+
+.nav-text {
+  font-size: 11px;
+}
+
+.home-icon {
+  height: 40px;
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+.header-text {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.general-header {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.module-header {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.r-arrow {
+  height: 0.75rem;
+}
+
+.welcome-text {
+  color: #E8002C;
+  font-size: 24px;
+}
+
+.main-header {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.kudo-home {
+  /* width: 380px; */
+  /* height: 100px; */
+  background-color: white;
+  border-radius: 10px;
+  /* margin-top: 20px; */
+  /* margin-left: 0; */
+  /* padding: 10px; */
+  /* padding-left: 20px; */
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
